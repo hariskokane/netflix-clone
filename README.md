@@ -40,7 +40,7 @@ This project is created for the **GrowthLink Web Development Internship Assignme
 ---
 
 ## 📂 Folder Structure
-
+```bash
 📦 netflix-clone/
 ├── public/
 │   └── netflix-icon.svg
@@ -74,6 +74,7 @@ This project is created for the **GrowthLink Web Development Internship Assignme
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+```
 
 ## ✅ How to Run the Project
 
