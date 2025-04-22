@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-netflix-black text-white font-sans;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-netflix-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-netflix-gray rounded-full;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer components {
+  .netflix-card {
+    @apply relative overflow-hidden rounded-md transition-transform duration-300 transform cursor-pointer shadow-lg;
+  }
+  
+  .netflix-card:hover {
+    @apply z-20 scale-105 shadow-xl;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(20, 20, 20, 0.8) 20%,
+      rgba(20, 20, 20, 0) 50%,
+      rgba(20, 20, 20, 0.8) 80%,
+      rgba(20, 20, 20, 1) 100%
+    );
+  }
+}
